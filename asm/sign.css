@@ -1,0 +1,41 @@
+.container{
+    position: relative;
+    height: 100vh;
+}
+#form{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border:1px solid black ;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: rgb(245, 237, 226);
+
+}
+input{
+    height: 20px;
+    width: 250px;
+    margin-bottom: 20px;
+}
+
+
+#login{
+    width: 100%;
+    background-color:aquamarine;
+    border: 1px solid black;
+    border-radius: 3px;
+    margin-bottom: 5px;
+}
+#login:hover{
+    background-color: antiquewhite;
+}
+#sign{
+    width: 100%;
+    background-color: aquamarine;
+    border: 1px solid black;
+    border-radius: 3px;
+}
+#sign:hover{
+    background-color: antiquewhite;
+}
