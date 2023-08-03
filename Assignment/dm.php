@@ -1,7 +1,4 @@
-<?php
-    $nhan_vien = array("Đông","Tây","Nam","Bắc");
-    
-?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -20,26 +17,25 @@
 <body>
     <table border="1px">
         <tr>
-            <td>stt</td>
-            <td>tên</td>
+            <td>Name</td>
+            <td>Action</td>
             <td></td>
         </tr>
         <?php
-         for($i=0;$i<sizeof($nhan_vien);$i++){
-            $ten=$nhan_vien[$i];
+        for($i=0;$i<2;$i++){
             if($i%2==0){ ?>
                 <tr class="chan">
-                <td><?php print($i);?></td>
-                <td><?php print($nhan_vien[$i]);?></td>
-                <td><img onclick="info('<?php echo($ten)?>')" src="img/icon.png"width="50px"; alt=""></td>
+                <td>CCTV</td>
+                <td><a href="">edit</a></td>
+                <td><a href="">remove</a></td>
                 </tr>
                  <?php
             }else{ ?>
-                <tr class="le">
-                <td><?php print($i);?></td>
-                <td><?php print($nhan_vien[$i]);?></td>
-                <td><img onclick="info('<?php echo($ten)?>')" src="img/icon.png"width="50px"; alt=""></td>
-                </tr>
+            <tr class="le">
+                <td>COmputer</td>
+                <td><a href="">edit</a></td>
+                <td><a href="">remove</a></td>
+            </tr>
                    <?php
             }
         ?>
